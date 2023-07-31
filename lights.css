@@ -1,0 +1,101 @@
+/**
+ * Traffic light animation
+ */
+
+ #trafficlight{
+    background:#333;
+    height:450px;
+    width:150px;
+    border-radius:30px;
+    margin:3em auto;
+    position:relative;
+    padding-top:12px;
+    border:2px #000 solid
+    }
+    #trafficlight span {
+    margin:20px auto;
+    display:block;
+    width:65px;
+    height:65px;
+    border:4px solid #000;
+    border-radius:50%;
+    box-shadow:5px 10px 20px rgba(0,0,0,.5),inset 5px 10px 10px rgba(0,0,0,.5)
+    }
+    #light1{ 		/* red light*/
+    background:#300;
+    animation: redlight 12s infinite
+    }
+    #light2{  		/* amber light*/
+    background:#430;
+    animation: amberlight 12s infinite
+    }
+    #light3{  		/* green light*/
+    background:#030;
+    animation: greenlight 12s infinite
+    }
+    @keyframes greenlight {
+        0%{background:#030}
+        5%{background:#0a0}
+        45%{background:#0a0}
+        50%{background:#030}
+        100%{background:#030}
+        }
+    @keyframes amberlight{
+        0%{background:#430}
+        45%{background:#430}
+        55%{background:rgb(214, 175, 17)}
+        60%{background:#430}
+        100%{background:#430}
+    }
+    @keyframes redlight{
+        0%{background:#300}
+        55%{background:#300}
+        60%{background:#f00}
+        95%{background:#f00}
+        100%{background:#300}
+    }
+    
+    #light1, #light2, #light3 {
+        animation-duration:4s
+        }
+    
+    
+    
+    body{
+    background: rgb(59,103,158); /* Old browsers */
+    min-height:100%;
+    height:700px;
+    background: linear-gradient(top, 
+    rgba(59,103,158,1) 0%,
+    rgba(43,136,217,1) 72%,
+    rgba(6,17,40,1) 73%,
+    rgba(61,48,33,1) 88%); /* W3C */; /* W3C */
+    }
+
+    .explore-btn-go{
+        margin-left: 50px;
+        background-color: #0a0;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .explore-btn-caution{
+        margin-left: 50px;
+        background-color: rgb(238, 185, 28);
+        border-radius: 10px;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .explore-btn-danger{
+        margin-left: 50px;
+        background-color: #f00;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
