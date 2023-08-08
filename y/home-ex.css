@@ -131,7 +131,7 @@ header {
   padding-top: 1%;
 }
 
-/* FEATURES/ABOUT SECTION */
+/* FEATURES SECTION */
 .top-features {
   padding: 6% 8%;
   display: flex;
@@ -148,75 +148,6 @@ header {
   padding: 0 10%;
 }
 
-.aboutUs{
-  display: flex;
-  justify-content: center;
-  width: 1200px;
-  height: 400px;
-  gap: 0px;
-  padding-top: 30px;
-  padding-left: 40px;
-  /* background-color: #9ecaed; */
-  margin-left: 150px;
-}
-
-.iconBox{
-  display: flex
-  /* grid-template-columns: 300px, 300px, 300px;
-  grid-template-rows: 200px;
-  background-color: #0a0; */
-}
-
-.lapTopContainer{
-  display: flex;
-  width: 850px;
-  height: 80px;
-  /* padding-right: 200px; */
-  /* background-color: #f00; */
-}
-
-.Item2{
-  width: 300px;
-  height: 300px;
-  margin-top: 30px;
-  margin-right: 50px;
-}
-
-.aboutIconLaptop{
-  width: 80px;
-  height: 80px;
-}
-
-.aboutIconData{
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  right: 20px;
-  margin-right: 80px;
-}
-
-.aboutTitle{
-  text-align: center;
-  color: rgb(218, 214, 214);
-  font-size: 25px;
-}
-
-.aboutTitleData{
-  text-align: center;
-  color: rgb(218, 214, 214);
-  font-size: 25px;
-  margin-right: 40px;
-}
-
-.welcomeCopy{
-  width: 400px;
-  height: 200px;
-  padding-top: 30px;
-  border: 3px solid gray;
-  border-radius: 8px;
-  margin-right: 50px;
-}
-
 .bottom-features {
   padding: 3% 8%;
   display: flex;
@@ -226,55 +157,18 @@ header {
   line-height: 1.5;
   background-color: hsl(218, 28%, 13%);
   border-bottom: 2px solid #4d4b4b;
-  padding-left: 60px;
 }
-
-
-
-.bottomFeaturesWrapper{
-  display: flex;
-  width: auto;
-  height: auto;
-  justify-content: center;
-  /* background-color: chocolate; */
-  margin-left: 275px;
-  /* padding-top: 60px; */
-}
-
-.solutionsItem1{
-  width: 450px;
-  height: 550px;
-  padding-top: 120px;
-  /* background-color: rgb(98, 191, 227); */
-}
-
-.solutionsItem2{
-  width: 200px;
-  height: 550px;
-  /* background-color: red; */
-}
-
-.solutionsItem3{
-  width: 450px;
-  height: 550px;
-  padding-top: 120px;
-  /* background-color: pink; */
-}
-
 
 .bottom-features p {
   padding: 0 10%;
 }
 
 .quotes{
-  width: 400px;
+  width: 300px;
 }
 
 .quotes2{
-  /* margin-left: 150px; */
-  width: 400px;
-  /* position: absolute;
-  right: 20px; */
+  width: 290px;
 }
 
 /* PRODUCTIVE SECTION */
@@ -860,7 +754,93 @@ header {
 
  /* Modal2 styles */
 
- 
+ .myModal2{
+  display: none;
+  z-index: 20;
+  width: 250px;
+  height: 300px;
+  background-color: #656161;
+  position: absolute;
+  top: 200px;
+  left: 25px;
+  border-radius: 8px;
+}
+
+.front2{
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  border-radius: 8px;
+  position: absolute;
+  left: 50px; 
+  z-index: 4;
+ }
+
+ /* .front{
+  width: 250px;
+  height: 300px;
+  background-color: white;
+  border-radius: 8px;
+ } */
+
+ .front-image2{
+  width: 250px;
+  height: 300px;
+  border-radius: 8px; 
+ }
+
+.back2{
+  display: none;
+  width: 250px;
+  height: 300px;
+  background-color: rgb(249, 248, 248);
+  border-radius: 8px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.back-image{
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  margin-left: 80px;
+}
+
+.modalText2{
+  color: rgb(3, 3, 3);
+  font-size: 12px;
+ }
+
+ .REFRIGERATORS{
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+ }
+
+.greenEarthBtn{
+  width: 60px;
+  height: 30px;
+  position: relative;
+  top: -160px;
+  left: 90px;
+  border: none;
+  border: 1px solid green;
+  border-radius: 8px;
+  color: rgb(11, 11, 11);
+ }
+
+ .closeButton2{
+  color: rgb(206, 33, 27);
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  
+  cursor: pointer;
+
+ }
+
 
  /* Modal2 styles end */
 
@@ -875,115 +855,37 @@ header {
  }
  
 .myModal{
-  display: none;
-  z-index: 30;
-  width: 293px;
-  height: 345px;
+  display: block;
+  z-index: 20;
+  width: 250px;
+  height: 300px;
+  background-color: #656161;
   position: absolute;
-  border: none;
-  /* background-color: #656161; */
-  border-radius: 8px;
-  padding-left: 3px;
-}
-
-.modalFront{
-  display: none;
-  z-index: 30;
-  width: 285px;
-  height: 340px;
-  position: absolute;
-  /* border: 5px solid rgb(225, 229, 225); */
+  top: -10px;
   border-radius: 8px;
 }
 
-.frontCover{
-  width: 285px;
-  height: 335px;
+.front-image1{
+  width: 250px;
+  height: 300px;
   border-radius: 8px; 
  }
 
- .greenEarthBtn{
-   width: auto;
-   height: auto;
-   color: white;
-   background-image: linear-gradient(60deg, hsl(116, 71%, 34%), hsl(24, 82%, 46%));
-   border-radius: 25px;
-   border: none;
-   cursor: pointer;
-   transition: 0.3s;
-   margin-left: 80px;
-   position: absolute;
-   top: 155px;
-   margin-left: 115px;
-   
- }
-
- .modalBack{
+ .back1{
   display: none;
-  width: 280px;
-  height: 335px;
-  border-radius: 8px; 
-  border: 5px solid red;
-  margin-left: 340px;
-  background-color: white;
+  width: 250px;
+  height: 300px;
+  background-color: rgb(249, 248, 248);
+  border-radius: 8px;
   position: absolute;
   top: 0px;
-  left: -335px;
+  left: 0px;
   z-index: -1;
-  
 }
 
-
-.watchDemo{
-  width: 110px;
-  height: 30px;
-  background-image: linear-gradient(60deg, hsl(116, 71%, 34%), hsl(24, 82%, 46%));
-  border-radius: 25px;
-  padding-top: 2px;
-  padding-left: 10px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  color: white;
-}
-
-.CloseBtn{
-  color: #0a0;
-  cursor: pointer;
-  position: absolute;
-  top: 295px;
-  margin-left: 150px;
-}
-
-/* Experiment Modal */
-
- /* Styles for the modal */
- .modal {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border:5px solid #0a0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-content {
-  background-color: white;
-  padding: 20px;
-  /* border-radius: 8px; */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  transform: translate(-50%, -50%);
-}
-
-/* Close button style */
-.close {
-  float: right;
-  cursor: pointer;
+.modalText1{
+  color: rgb(3, 3, 3);
+  font-size: 12px;
 }
 
      
@@ -1007,11 +909,8 @@ header {
     margin-left: 35rem;
   }
 
-  .productHeading{
-    /* margin-left: 50px; */
-    text-align: center;
- }
-
+ 
+  
   .flex-container{
     display: flex;
     justify-content: center;
@@ -1044,6 +943,7 @@ header {
     font-size: 25px;
   }
 
+
   .openButton1{
     width: auto;
     height: auto;
@@ -1066,7 +966,7 @@ header {
 
  .projectsWrapper{
   width: auto;
-  height: 780px;
+  height: 880px;
   background-color: #000;
   padding-top: 20px;
   border-top: 4px solid gray;
@@ -1081,7 +981,7 @@ header {
 }
 
  .projectsFlexContainer{
-  margin-top: 5rem;
+  margin-top: 10rem;
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -1096,22 +996,6 @@ header {
   background-image: linear-gradient(60deg, hsl(116, 71%, 34%), hsl(24, 82%, 46%));
  }
 
-
-
- .projectHeading{
-    /* margin-left: 10px; */
-    text-align: center;
- }
-
- .lead{
-    width: 40rem;
-    height: 2rem;
-    /* background-color: yellow; */
-    padding-left: 30px;
-    position: absolute;
-    right: 480px;
-
- }
  .projectCard{
   width: 315px;
   height: 360px;
@@ -1170,16 +1054,15 @@ header {
 
 .formHeader{
   font-family: sans-serif;
-		color: rgb(244, 237, 237);
+		color: #7f8185;
 		font-size: 2.5rem;
     justify-content: center;
 }
 
 .formHeaderCopy{
   font-family: sans-serif;
-	color: #7f8185;
-	font-size: 1.5rem;
-
+		color: #7f8185;
+		font-size: 1.5rem;
 }
 
 
