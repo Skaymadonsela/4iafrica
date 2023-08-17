@@ -1,8 +1,16 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"); */
+
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: 62.5%; */
+  font-family:  sans-serif;
 }
 
-modalbody {
+.modalbody {
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -132,39 +140,122 @@ header {
 }
 
 /* FEATURES/ABOUT SECTION */
-.top-features {
+
+
+/* About section */
+
+.aboutSection {
   padding: 6% 8%;
   display: flex;
-  align-items: center;
-  text-align: center;
-  color: hsl(0, 0%, 100%);
-  line-height: 1.5;
   background-color: hsl(218, 28%, 13%);
   border-bottom: 2px solid #4d4b4b;
   border-top: 2px solid #4d4b4b;
 }
 
-.top-features p {
-  padding: 0 10%;
+.aboutWrapper{
+  display: flex;
+  width: 1400px;
+  height: 600px;
+  padding-left: 60px;
+  /* background-color: coral; */
+  justify-content: center;
+  align-items: center;
+  margin-left: 125px;
+  gap: 30px;
 }
 
-.aboutUs{
+.cardBox {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: #787676;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
+    rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
+}
+
+.card {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  background: #000814;
+  border-radius: 20px;
+  z-index: 5;
   display: flex;
   justify-content: center;
-  width: 1200px;
-  height: 400px;
-  gap: 0px;
-  padding-top: 30px;
-  padding-left: 40px;
-  /* background-color: #9ecaed; */
-  margin-left: 120px;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  overflow: hidden;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
 }
 
-.iconBox{
-  display: flex
-  /* grid-template-columns: 300px, 300px, 300px;
-  grid-template-rows: 200px;
-  background-color: #0a0; */
+.card .content h3 {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+.card .content p {
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+
+.card .content {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card:hover h2, 
+.card:hover span {
+  opacity: 0;
+}
+
+.cardBox::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 150%;
+  background: #40E0D0;
+background: -webkit-linear-gradient(to right, #63a861, #FF8C00, #3ac8ec);
+background: linear-gradient(to right, #e6990b, #FF8C00, #40E0D0);
+  animation: glowing01 5s linear infinite;
+  transform-origin: center;
+  animation: glowing 5s linear infinite;
+}
+
+@keyframes glowing {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.aboutCard{
+  display: flex;
+  width: 400px;
+  height: 400px;
+  gap: 60px;
+  border: 1px solid red;
+}
+
+
+.top-features p {
+  padding: 0 10%;
 }
 
 .lapTopContainer{
@@ -175,12 +266,6 @@ header {
   /* background-color: #f00; */
 }
 
-.Item2{
-  width: 300px;
-  height: 300px;
-  margin-top: 30px;
-  margin-right: 50px;
-}
 
 .aboutIconLaptop{
   width: 80px;
@@ -198,24 +283,23 @@ header {
 .aboutTitle{
   text-align: center;
   color: rgb(218, 214, 214);
-  font-size: 25px;
+  font-size: 20px;
+  width: 200px;
 }
 
 .aboutTitleData{
   text-align: center;
   color: rgb(218, 214, 214);
   font-size: 25px;
-  margin-right: 40px;
+  
 }
 
-.welcomeCopy{
-  width: 400px;
-  height: 200px;
-  padding-top: 30px;
-  border: 3px solid gray;
-  border-radius: 8px;
-  margin-right: 50px;
-}
+/* End About section */
+
+
+
+
+
 
 .bottom-features {
   padding: 3% 8%;
@@ -231,14 +315,13 @@ header {
 
 
 
-.bottomFeaturesWrapper{
-  display: flex;
-  width: auto;
-  height: auto;
-  justify-content: center;
+.videoWrapper{
+  width: 600px;
+  height: 450px;
+  /* justify-content: center; */
   /* background-color: chocolate; */
-  margin-left: 275px;
-  /* padding-top: 60px; */
+  margin-left: 650px;
+  padding-top: 20px;
 }
 
 .solutionsItem1{
@@ -750,6 +833,7 @@ header {
 
 /* Cube Rotation end */
 
+
  /* Traffic light animation */
 
 
@@ -811,7 +895,8 @@ header {
       }
 
       .explore-btn-go{
-        margin-left: 10px;
+        width: 60px;
+        margin-left: 45px;
         background-color: #0a0;
         border-radius: 10px;
         border: none;
@@ -820,7 +905,8 @@ header {
     }
 
     .explore-btn-caution{
-      margin-left: 10px;
+        width: 60px;
+        margin-left: 45px;
         background-color: rgb(238, 185, 28);
         border-radius: 10px;
         border: none;
@@ -829,7 +915,8 @@ header {
     }
 
     .explore-btn-danger{
-        margin-left: 10px;
+        width: 60px;
+        margin-left: 45px;
         background-color: #f00;
         border-radius: 10px;
         border: none;
@@ -1104,12 +1191,13 @@ header {
  }
 
  .lead{
-    width: 40rem;
+    width: 45rem;
     height: 2rem;
     /* background-color: yellow; */
-    padding-left: 30px;
-    position: absolute;
-    right: 480px;
+    margin-left: 50px;
+    /* position: absolute;
+    right: 480px; */
+    text-align: center;
 
  }
  .projectCard{
@@ -1156,9 +1244,10 @@ header {
 } 
 
 .contactForm{
-  margin-bottom: 80px;
-  padding-top: 20px;
+  margin-bottom: 160px;
+  padding-top: 10px;
   /* background-color: #ffd340; */
+
 }
 
 .formHeaderContainer{
