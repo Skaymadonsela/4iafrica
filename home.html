@@ -3,62 +3,395 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-      
-        <!-- Google fonts -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
-    <!-- Favicon -->
-    <link href="/4iafrica/img/4idigital.jpg" rel="icon">
-    <title>4iAfrica home</title>
+    <!-- <link rel="stylesheet" href="home-ex.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
+    crossorigin="anonymous">
+    
+    <title>Responsive Grid</title>
+
+    <style>
+
+        /* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Grid container */
+.outerLayer {
+    display: grid;
+    grid-template-columns: 576px; /* columns */
+    height: 100vh;
+    grid-template-rows: repeat(8, 60px, 600px, 600px, 600px, 3000px, 600px, 600px, 400px );
+    gap: 20px; /* Gap between grid items */
+    padding: 20px;
+    grid-template-areas: 
+    "navBar"
+    "intro"
+    "about"
+    "video"
+    "products"
+    "projects"
+    "Form"
+    "footer"
+
+}
+
+/* Grid items */
+.navBar{
+    background-color: #d11717;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro{
+    background-color: #d4acac;
+    padding: 20px;
+    text-align: center;
+}
+
+.about{
+    background-color: #a9cf1f;
+    padding: 20px;
+    text-align: center;
+}
+
+.video{
+    background-color: aqua;
+    padding: 20px;
+    text-align: center;
+}
+
+.products{
+    background-color: chocolate;
+    height: 3000px;
+    padding: 20px;
+    gap: 20px;
+    padding-left: 120px;
+    text-align: center;
+    
+}
+
+.productDiv{
+    display: grid;
+    width: 370px;
+    height: 420px;
+    border:5px solid #15d73c;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.projects{
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+.Form{
+    background-color: cornflowerblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer{
+    background-color: crimson;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+/* Media queries for responsive design */
+
+/* Tablet */
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* One columns on smaller screens */
+    }
+    .aboutSection{
+      padding-left: 100px;
+      background-color: darkseagreen;
+    }
+
+    .aboutWrapper{
+      width: 60%;
+    }
+
+    .trafficlight{
+        position: relative;
+        right: -60%;
+    }
+
+    .aboutWrapper{
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+}
+
+/* For medium devices */
+@media (min-width: 769px) and (max-width: 992px) {
+    /* Adjust styles for small laptops and tablets in landscape */
+
+    .grid-container {
+        grid-template-columns: 1fr; /* One column all on screens */
+    } 
+
+}
+
+
+/* For large devices */
+@media (min-width: 993px) and (max-width: 1200px) {
+    /* Adjust styles for desktop monitors and large laptops */
+
+    .grid-container {
+        grid-template-columns: 1fr; /* One column all on screens */
+    }
+}
+
+/* For extra large devices */
+@media (min-width: 1201px) {
+    /* Adjust styles for larger desktop monitors */
+
+    .grid-container {
+        grid-template-columns: 1fr; /* One column all on screens */
+    }
+}
+
+    </style>
 </head>
 <body>
-    <h4 class="logo">4iAfrica</h4>
+    
+    <div class="outerLayer">
+        <div class="navBar">
 
-    <!-- <h2 class="Headling">Comming Soon!</h2> -->
+            <header> <!-- PAGE HEADER -->
+                <figure class="header-logo">
+                  <!-- <img src="https://assets.codepen.io/4417738/logo_4.svg" alt="Fylo logo"> -->
+                  <h1 style="color: rgb(232, 237, 232);">4IAFRICA</h1>
+                </figure>
+              
+                <nav class="header-menu">
+                  <ul>
+                    <li><a href="#" class="menuItem">Home</a></li>          
+                    <li><a href="#about" class="menuItem">About</a></li>
+                    <li><a href="#productSection" class="menuItem">Products</a></li>
+                    <li><a href="#projectSection" class="menuItem">Projects</a></li>
+                    <!-- <li>Team</li> -->
+                    <li><a href="#contactSection" class="menuItem">Contact</a></li>
+                  </ul>
+                </nav>
+              </header>
+        
 
-    <div class="cube">
-  
-        <!-- Creating 6 divs for each face of the cube -->
-  
-        <div class="box box1">
-            <img src=
-"/4iafrica/img/draught.jpeg"
-                alt="image 1">
-        </div>
-  
-        <div class="box box2">
-            <img src=
-"/4iafrica/img/nasa-climate-change.jpeg"
-                alt="image 2">
-        </div>
-  
-        <div class="box box3">
-            <img src=
-"/4iafrica/img/leaf.jpeg"
-                alt="image 3">
-        </div>
-  
-        <div class="box box4">
-            <img src=
-"/4iafrica/img/heatingup-earth.png"
-                alt="image 4">
-        </div>
-  
-        <div class="box box5">
-            <img src=
-"/4iafrica/img/burning-planet.jpeg"
-                alt="image 5">
-        </div>
-  
-        <div class="box box6">
-            <img src=
-"/4iafrica/img/climate-image.png"
-                alt="image 6">
-        </div>
-    </div>
-<!-- Cube rotation end -->
+        </div> <!-- End navBar grid -->
 
-<a href="#" class="neon-button">ENTER</a>
+
+        <div class="intro">
+
+            <section class="intro"> <!-- INTRO SECTION -->
+
+                <!-- Cube Rotation -->
+        
+                <div class="containerCube">
+                  <div class="cube">
+                    <div class="cube__face cube-face--bottom shadow"></div>
+                    <div class="cube__face cube-face--left">
+                      <img src="img/clean-globe.jpg" alt="Clean world">
+                    </div>
+                    <div class="cube__face cube-face--front">
+                      <img src="img/climate-change-backgrounder.jpg" alt="Climate change"/>
+                    </div>
+                    <div class="cube__face cube-face--back">
+                      <img src="img/draught.jpeg" alt="Draught">
+                    </div>
+                    <div class="cube__face cube-face--right">
+                     <img src="img/burning-planet.jpeg" alt="Burning planet">
+                    </div>
+                    <div class="cube__face cube-face--top">
+                      <img src="img/earth-11015_640.jpg" alt="Earth">
+                    </div>
+                    <div class="cube__face cube-face--bottom">
+                      <img src="img/africa.jpg" alt="Africa">
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Cube Roation end -->
+            
+                <h1>INSIGHT | INNOVATE | IMPLEMENT | IMPACT</h1>
+                <p>Sustainability is key to ensuring a resilient future for all. 4iAfrica provides governments, 
+                  business and communities with sustainable development solutions.</p>
+                
+                <div class="started">
+                  <button type="button">Explore</button> 
+                </div>
+              </section> <!-- End Intro -->
+
+        </div> <!-- End intro grid -->
+
+
+        <div class="about">
+
+            <section class="aboutSection" id="about">
+
+                <div class="aboutWrapper">
+          
+                  <div class="cardBox">
+                    <div class="card">
+                      <h2>About 4iAfrica</h2>
+                      <span>Hover Me</span>
+                      <div class="content">
+                        <h3>Welcome to 4iAfrica</h3>
+                        <p>We provide products, projects and digital platforms in the climate change, renewable energies, water, education, health, agriculture,
+          
+                          tourism, ICT, Youth, Woman and
+                          
+                          SME Development sectors</p>
+                      </div> <!-- end of content -->
+                    </div> <!-- end of card -->
+                  </div> <!-- end of cardBox -->
+          
+                  <div class="trafficLightsContainer">
+          
+                    <div id="trafficlight">
+                      <span id="light1"></span>
+                      <div id="myModal10" class="modal">
+                        <div class="modal-content" style="width: 600px; border-radius: 8px;">
+                          <!-- <span class="close" id="closeModal">&times;</span> -->
+                          <!-- <span class="close" id="closeModal">Close</span> -->
+                            <span class="CloseBtn10" id="close10">Close</span>
+            
+                         <img src="img/antonio-Quote9.png" alt="">
+                          
+                          
+                        </div> <!-- end of modal-content -->
+            
+                      </div> <!-- end of modal -->
+            
+                      <button class="explore-btn-danger" id="red">Explore</button>
+                      <!-- End of light1 -->
+            
+                      <span id="light2"></span>
+            
+                      <div id="myModal11" class="modal">
+                        <div class="modal-content" style="width: 600px; border-radius: 8px;">
+                          <!-- <span class="close" id="closeModal">&times;</span> -->
+                          <!-- <span class="close" id="closeModal">Close</span> -->
+                            <span class="CloseBtn11" id="close11">Close</span>
+            
+                         <img src="img/Antonio-yellow.png" alt="">
+                          
+                          
+                        </div> <!-- end of modal-content -->
+            
+                      </div> <!-- end of modal -->
+                      <button class="explore-btn-caution" id="yellow">Explore</button>
+                       <!-- End of light2 -->
+            
+                       <div id="myModal12" class="modal">
+                        <div class="modal-content" style="width: 600px; border-radius: 8px;">
+                          <!-- <span class="close" id="closeModal">&times;</span> -->
+                          <!-- <span class="close" id="closeModal">Close</span> -->
+                            <span class="CloseBtn12" id="close12">Close</span>
+            
+                         <img src="img/antonio-climate.jpeg" alt="">
+                          
+                          
+                        </div> <!-- end of modal-content -->
+            
+                      </div> <!-- end of modal -->
+            
+                      <span id="light3"></span>
+            
+            
+            
+                      <button class="explore-btn-go" id="green">Explore</button>
+                       <!-- End of light3 -->
+                  </div>
+            
+                  </div> <!-- End trafficLightsContainer -->
+          
+                  
+                          <div class="cardBox">
+                            <div class="card">
+                              <h2>About 4iAfrica</h2>
+                              <span>Hover Me</span>
+                              <div class="content">
+                                <h3>Data driven Solutions</h3>
+                                <p>With a long established track record as an Innovation driven solutions provider we focuses on implementation 
+                                  of large scale projects to transform and 
+                                  uplift developing countries.</p>
+                              </div> <!-- end of content -->
+                            </div> <!-- end of card -->
+                          </div> <!-- end of cardBox -->
+               
+                </div> <!-- end of aboutWrapper -->
+                      
+              </section> <!-- end of about -->
+
+        </div> <!-- End about grid -->
+
+
+        <div class="video">
+
+            <section class="bottom-features" id="videoSection">
+
+                <div class="videoWrapper">
+        
+                  <iframe width="70%" height="400" src="https://www.youtube.com/embed/YYspivTxRw4" 
+                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                  clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+                  web-share" allowfullscreen></iframe>
+        
+                  
+        
+                </div> <!-- end of videoWrapper -->
+                
+              </section> <!-- End videoSection -->
+
+        </div> <!-- End video grid -->
+
+        <div class="products">
+
+            <div class="productDiv">
+                
+                
+
+            </div> <!-- End productDiv -->
+
+            <div class="productDiv">
+            </div> <!-- End productDiv -->
+
+            <div class="productDiv">
+            </div> <!-- End productDiv -->
+
+            <div class="productDiv">
+            </div> <!-- End productDiv -->
+
+            <div class="productDiv">
+            </div> <!-- End productDiv -->
+
+            <div class="productDiv">
+            </div> <!-- End productDiv -->
+    
+    
+
+
+        </div> <!-- End products grid grid -->
+        
+
+
+        <div class="projects">projects</div>
+        <div class="Form">contactForm</div>
+        <div class="footer">footer</div>
+
+    </div><!-- End outerLayer -->
 </body>
+
+<script src="js/modal.js"></script>
 </html>

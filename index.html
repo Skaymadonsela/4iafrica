@@ -13,9 +13,14 @@
     
     <title>4IAFRICA Home</title>
 </head>
-<body class="body" id="bodyHtml">=
+<body class="body" id="bodyHtml">
 
-    <header> <!-- PAGE HEADER -->
+
+  <div class="grid-container1">
+
+    <div class="grid-item1" id="header">
+
+      <header> <!-- PAGE HEADER -->
         <figure class="header-logo">
           <!-- <img src="https://assets.codepen.io/4417738/logo_4.svg" alt="Fylo logo"> -->
           <h1 style="color: rgb(232, 237, 232);">4IAFRICA</h1>
@@ -25,410 +30,422 @@
           <ul>
             <li><a href="#" class="menuItem">Home</a></li>          
             <li><a href="#about" class="menuItem">About</a></li>
-            <li><a href="#productSection" class="menuItem">Products</a></li>
+            <li><a href="#productSectionGrid" class="menuItem">Products</a></li>
             <li><a href="#projectSection" class="menuItem">Projects</a></li>
             <!-- <li>Team</li> -->
             <li><a href="#contactSection" class="menuItem">Contact</a></li>
           </ul>
         </nav>
       </header>
-          
-      <main>
-        <section class="intro"> <!-- INTRO SECTION -->
-          <!-- <figure>
-            <img src="https://assets.codepen.io/4417738/illustration-intro.png" alt="intro-illustration">
-          </figure> -->
 
-          <!-- Cube Rotation -->
+    </div> <!-- End header grid-->
 
-          <div class="containerCube">
-            <div class="cube">
-              <div class="cube__face cube-face--bottom shadow"></div>
-              <div class="cube__face cube-face--left">
-                <img src="img/clean-globe.jpg" alt="Clean world">
-              </div>
-              <div class="cube__face cube-face--front">
-                <img src="img/climate-change-backgrounder.jpg" alt="Climate change"/>
-              </div>
-              <div class="cube__face cube-face--back">
-                <img src="img/draught.jpeg" alt="Draught">
-              </div>
-              <div class="cube__face cube-face--right">
-               <img src="img/burning-planet.jpeg" alt="Burning planet">
-              </div>
-              <div class="cube__face cube-face--top">
-                <img src="img/earth-11015_640.jpg" alt="Earth">
-              </div>
-              <div class="cube__face cube-face--bottom">
-                <img src="img/africa.jpg" alt="Africa">
-              </div>
+
+    <div class="grid-item1" id="intro">
+
+      <section class="intro"> <!-- INTRO SECTION -->
+
+        <!-- Cube Rotation -->
+
+        <div class="containerCube">
+          <div class="cube">
+            <div class="cube__face cube-face--bottom shadow"></div>
+            <div class="cube__face cube-face--left">
+              <img src="img/clean-globe.jpg" alt="Clean world">
+            </div>
+            <div class="cube__face cube-face--front">
+              <img src="img/climate-change-backgrounder.jpg" alt="Climate change"/>
+            </div>
+            <div class="cube__face cube-face--back">
+              <img src="img/draught.jpeg" alt="Draught">
+            </div>
+            <div class="cube__face cube-face--right">
+             <img src="img/burning-planet.jpeg" alt="Burning planet">
+            </div>
+            <div class="cube__face cube-face--top">
+              <img src="img/earth-11015_640.jpg" alt="Earth">
+            </div>
+            <div class="cube__face cube-face--bottom">
+              <img src="img/africa.jpg" alt="Africa">
             </div>
           </div>
+        </div>
 
-          <!-- Cube Roation end -->
-      
-          <h1>INSIGHT | INNOVATE | IMPLEMENT | IMPACT</h1>
-          <p>Sustainability is key to ensuring a resilient future for all. 4iAfrica provides governments, 
-            business and communities with sustainable development solutions.</p>
-          
-          <div class="started">
-            <button type="button">Explore</button> 
-          </div>
-        </section>
-      
-        <section class="aboutSection" id="about">
+        <!-- Cube Roation end -->
+    
+        <h1>INSIGHT | INNOVATE | IMPLEMENT | IMPACT</h1>
+        <p>Sustainability is key to ensuring a resilient future for all. 4iAfrica provides governments, 
+          business and communities with sustainable development solutions.</p>
+        
+        <div class="started">
+          <button type="button">Explore</button> 
+        </div>
+      </section> <!-- End Intro -->
 
-          <div class="aboutWrapper">
-
-            <div class="cardBox">
-              <div class="card">
-                <h2>About 4iAfrica</h2>
-                <span>Hover Me</span>
-                <div class="content">
-                  <h3>Welcome to 4iAfrica</h3>
-                  <p>We provide products, projects and digital platforms in the climate change, renewable energies, water, education, health, agriculture,
-  
-                    tourism, ICT, Youth, Woman and
-                    
-                    SME Development sectors</p>
-                </div> <!-- end of content -->
-              </div> <!-- end of card -->
-            </div> <!-- end of cardBox -->
+    </div> <!-- End intro grid -->
 
 
-
-            <div id="trafficlight">
-              <span id="light1"></span>
-              <div id="myModal10" class="modal">
-                <div class="modal-content" style="width: 600px; border-radius: 8px;">
-                  <!-- <span class="close" id="closeModal">&times;</span> -->
-                  <!-- <span class="close" id="closeModal">Close</span> -->
-                    <span class="CloseBtn10" id="close10">Close</span>
-  
-                 <img src="img/antonio-Quote9.png" alt="">
-                  
-                  
-                </div> <!-- end of modal-content -->
-  
-              </div> <!-- end of modal -->
-  
-              <button class="explore-btn-danger" id="red">Explore</button>
-              <!-- End of light1 -->
-  
-              <span id="light2"></span>
-  
-              <div id="myModal11" class="modal">
-                <div class="modal-content" style="width: 600px; border-radius: 8px;">
-                  <!-- <span class="close" id="closeModal">&times;</span> -->
-                  <!-- <span class="close" id="closeModal">Close</span> -->
-                    <span class="CloseBtn11" id="close11">Close</span>
-  
-                 <img src="img/Antonio-yellow.png" alt="">
-                  
-                  
-                </div> <!-- end of modal-content -->
-  
-              </div> <!-- end of modal -->
-              <button class="explore-btn-caution" id="yellow">Explore</button>
-               <!-- End of light2 -->
-  
-               <div id="myModal12" class="modal">
-                <div class="modal-content" style="width: 600px; border-radius: 8px;">
-                  <!-- <span class="close" id="closeModal">&times;</span> -->
-                  <!-- <span class="close" id="closeModal">Close</span> -->
-                    <span class="CloseBtn12" id="close12">Close</span>
-  
-                 <img src="img/antonio-climate.jpeg" alt="">
-                  
-                  
-                </div> <!-- end of modal-content -->
-  
-              </div> <!-- end of modal -->
-  
-              <span id="light3"></span>
-  
-  
-  
-              <button class="explore-btn-go" id="green">Explore</button>
-               <!-- End of light3 -->
-          </div>
+    <div class="grid-item1" id="aboutGrid">
 
 
-                    <div class="cardBox">
-                      <div class="card">
-                        <h2>About 4iAfrica</h2>
-                        <span>Hover Me</span>
-                        <div class="content">
-                          <h3>Data driven Solutions</h3>
-                          <p>With a long established track record as an Innovation driven solutions provider we focuses on implementation 
-                            of large scale projects to transform and 
-                            uplift developing countries.</p>
-                        </div> <!-- end of content -->
-                      </div> <!-- end of card -->
-                    </div> <!-- end of cardBox -->
+    <section class="aboutSection" id="about">
 
+      <div class="aboutWrapper">
 
-          </div> <!-- end of aboutWrapper -->
+        <div class="cardBox">
+          <div class="card">
+            <h2>About 4iAfrica</h2>
+            <span>Hover Me</span>
+            <div class="content">
+              <h3>Welcome to 4iAfrica</h3>
+              <p>We provide products, projects and digital platforms in the climate change, renewable energies, water, education, health, agriculture,
+
+                tourism, ICT, Youth, Woman and
                 
-        </section> <!-- end of about -->
- 
-        <section class="bottom-features" id="">
+                SME Development sectors</p>
+            </div> <!-- end of content -->
+          </div> <!-- end of card -->
+        </div> <!-- end of cardBox -->
 
-          <div class="videoWrapper">
+        <div class="trafficLightsContainer">
 
-            <iframe width="550" height="400" src="https://www.youtube.com/embed/YYspivTxRw4" 
-            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-            clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
-            web-share" allowfullscreen></iframe>
+          <div id="trafficlight">
+            <span id="light1"></span>
+            <div id="myModal10" class="modal">
+              <div class="modal-content" style="width: 600px; border-radius: 8px;">
+                <!-- <span class="close" id="closeModal">&times;</span> -->
+                <!-- <span class="close" id="closeModal">Close</span> -->
+                  <span class="CloseBtn10" id="close10">Close</span>
+  
+               <img src="img/antonio-Quote9.png" alt="">
+                
+                
+              </div> <!-- end of modal-content -->
+  
+            </div> <!-- end of modal -->
+  
+            <button class="explore-btn-danger" id="red">Explore</button>
+            <!-- End of light1 -->
+  
+            <span id="light2"></span>
+  
+            <div id="myModal11" class="modal">
+              <div class="modal-content" style="width: 600px; border-radius: 8px;">
+                <!-- <span class="close" id="closeModal">&times;</span> -->
+                <!-- <span class="close" id="closeModal">Close</span> -->
+                  <span class="CloseBtn11" id="close11">Close</span>
+  
+               <img src="img/Antonio-yellow.png" alt="">
+                
+                
+              </div> <!-- end of modal-content -->
+  
+            </div> <!-- end of modal -->
+            <button class="explore-btn-caution" id="yellow">Explore</button>
+             <!-- End of light2 -->
+  
+             <div id="myModal12" class="modal">
+              <div class="modal-content" style="width: 600px; border-radius: 8px;">
+                <!-- <span class="close" id="closeModal">&times;</span> -->
+                <!-- <span class="close" id="closeModal">Close</span> -->
+                  <span class="CloseBtn12" id="close12">Close</span>
+  
+               <img src="img/antonio-climate.jpeg" alt="">
+                
+                
+              </div> <!-- end of modal-content -->
+  
+            </div> <!-- end of modal -->
+  
+            <span id="light3"></span>
+  
+  
+  
+            <button class="explore-btn-go" id="green">Explore</button>
+             <!-- End of light3 -->
+        </div>
+  
+        </div> <!-- End trafficLightsContainer -->
+
+        
+                <div class="cardBox">
+                  <div class="card">
+                    <h2>About 4iAfrica</h2>
+                    <span>Hover Me</span>
+                    <div class="content">
+                      <h3>Data driven Solutions</h3>
+                      <p>With a long established track record as an Innovation driven solutions provider we focuses on implementation 
+                        of large scale projects to transform and 
+                        uplift developing countries.</p>
+                    </div> <!-- end of content -->
+                  </div> <!-- end of card -->
+                </div> <!-- end of cardBox -->
+
+
+      </div> <!-- end of aboutWrapper -->
+            
+    </section> <!-- end of about -->
+
+    </div><!-- End aboutGrid -->
+
+
+    <div class="grid-item1" id="videoSectionGrid">
+
+      <section class="bottom-features" id="videoSection">
+
+        <div class="videoWrapper">
+
+          <iframe width="70%" height="400" src="https://www.youtube.com/embed/YYspivTxRw4" 
+          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+          clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+          web-share" allowfullscreen></iframe>
+
+          
+
+        </div> <!-- end of videoWrapper -->
+        
+      </section> <!-- End videoSection -->
+
+      
+    </div> <!-- End videoSectionGrid -->
+
+
+    <div class="grid-item1" id="productSectionGrid">
+
+     
+      <h3 class="dark-blue" style="color: white;"><strong>Our products are green</strong></h3>
+
+      <p class="center" style="color: white;">Innovative, clean energy solutions from our global engineering teams. </p>
+      
+
+      <div class="grid-containerProducts">
+        <div class="item">
+
+
+          <div class="grid-item">
+
+            <div class="product-card">
+             <img src="img/aircon.png" alt="Solar Aircon">
+             <h4 class="productTitle">Solar Aircon</h4>
+             <button class="openButton1" id="openModal1">Read more</button>
+            </div> <!-- end of card1-->
+
+            <div id="myModal1" class="modal">
+             <div class="modal-content" style="width: 600px; border-radius: 8px;">
+               <!-- <span class="close" id="closeModal">&times;</span> -->
+               <span class="close" id="close1">Close</span>
+
+               <ul>
+                 <li>Unlike most Aircon machines, DOCCES Solar Air Conditioner does not recycle contaminated air</li>
+                 <li>Uses power from 2 solar panels, free energy from nature</li>
+                 <li>Do you want a no energy bill at the end of each month? 
+                   If your answer is yes then this product is perfect for youre household.</li>
+                 <li> For more information please watch our demo video below. 
+                   <a href="https://youtu.be/Lw7tx5UHiR0" class="watchDemo" target="_blank">Watch demo</a> </li>
+                   <!-- <span class="CloseBtn" id="close1">Close</span> -->
+               </ul>
+               
+               
+             </div> <!-- end of modal-content -->
+
+           </div> <!-- end of modal -->
+
+         </div> <!-- end of product1 -->
+
+        </div> <!-- End item 1-->
+
+
+        <div class="item">
+
+          <div class="grid-item">
+            <div class="product-card">
+              <img src="img/refridgerator.png" alt="Solar Refridgerator">
+              <h4 class="productTitle">Solar Refridgerators</h4>
+              <!-- <button class="openButton1" id="openModal2">Read more</button> -->
+              <button id="openModal2" class="openButton1">Read more</button>
+             </div> <!-- end of card12-->
+
+             <!-- <button id="openModal" class="">Open Modal</button> -->
+
+            <div id="myModal2" class="modal">
+              <div class="modal-content" style="width: 600px; border-radius: 8px;">
+                <!-- <span class="close" id="closeModal">&times;</span> -->
+                <!-- <span class="close" id="closeModal">Close</span> -->
+                  <span class="CloseBtn2" id="close2">Close</span>
+
+                <ul>
+                  <li>Our solar refrigerators are the cleanest in the world</li>
+                  <li> our non chemical battery keeps contents cold for 36 hours without solar or grid power.</li>
+                  <li>Low carbon footprint, inexpensive and reliable medical services and avoiding food wastage.</li>
+                  <li> Solar power - no emissions, no energy cost and CO2 Free refrigerant.</li>
+                    <!-- <span class="CloseBtn" id="close1">Close</span> -->
+                </ul>
+                
+                
+              </div> <!-- end of modal-content -->
+
+            </div> <!-- end of modal -->
 
             
+          </div> <!-- end of product2 -->
 
-          </div> <!-- end of videoWrapper -->
+        </div> <!-- End item 2-->
 
-          
-        </section>
+        <div class="item">
 
-        <!-- grid products section -->
-        <div class="productWrapper" id="productSection">
+          <div class="grid-item">
+            <div class="product-card">
+              <img src="img/cleanwater.png" alt="Hydro clean water generator">
+              <h4 class="productTitle">Water Generator</h4>
+              <!-- <button class="openButton1" id="openModal3">Read more</button> -->
+              <button id="openModal3" class="openButton1">Read more</button>
+             </div> <!-- end of card3-->
 
-        <div class="productHeaderContainer">
+             <div id="myModal3" class="modal">
+              <div class="modal-content" style="width: 600px; border-radius: 8px;">
+                <!-- <span class="close" id="closeModal">&times;</span> -->
+                <!-- <span class="close" id="closeModal">Close</span> -->
+                  <span class="CloseBtn3" id="close13">Close</span>
 
-          <!-- <h1 class="formHeader">Our products are green</h1> -->
-          <h3 class="productHeading" style="color: rgb(217, 210, 210);">
-            Our products are green
-            <!-- <medium class="text-body-secondary">With faded secondary text</medium> -->
-          </h3>
+                <ul>
+                  <li>More affordable than deep cycle batteries.</li>
+                  <li>Long term non chemical clean energy storage with a 30+ year shelf life</li>
+                  <li>Transportable and 74% efficiency factor</li>
+                  <li>This product has the ability to generate between 500-400,000 
+                    litres of clean water from the air every day. </li>
+                    <!-- <span class="CloseBtn" id="close1">Close</span> -->
+                </ul>
+                
+                
+              </div> <!-- end of modal-content -->
 
-          <p class="lead" style="color: rgb(217, 210, 210);">
-            Innovative, clean energy solutions from our global engineering teams.
-          </p>
+            </div> <!-- end of modal -->
+            
+          </div> <!-- end of product3 -->
 
-          <div class="productCopyContainer">
-
-
-          </div> <!-- end of productCopyContaine -->
-          <!-- <p class="formHeaderCopy">Innovative, clean energy solutions from our global engineering teams.</p> -->
-
-        </div><!-- end of productHeaderContainer -->         
-          <div class="flex-container">
-
-            <div class="grid-item">
-
-               <div class="product-card">
-                <img src="img/aircon.png" alt="Solar Aircon">
-                <h4 class="productTitle">Solar Aircon</h4>
-                <button class="openButton1" id="openModal1">Read more</button>
-               </div> <!-- end of card1-->
-
-               <div id="myModal1" class="modal">
-                <div class="modal-content" style="width: 600px; border-radius: 8px;">
-                  <!-- <span class="close" id="closeModal">&times;</span> -->
-                  <span class="close" id="close1">Close</span>
-
-                  <ul>
-                    <li>Unlike most Aircon machines, DOCCES Solar Air Conditioner does not recycle contaminated air</li>
-                    <li>Uses power from 2 solar panels, free energy from nature</li>
-                    <li>Do you want a no energy bill at the end of each month? 
-                      If your answer is yes then this product is perfect for youre household.</li>
-                    <li> For more information please watch our demo video below. 
-                      <a href="https://youtu.be/Lw7tx5UHiR0" class="watchDemo" target="_blank">Watch demo</a> </li>
-                      <!-- <span class="CloseBtn" id="close1">Close</span> -->
-                  </ul>
-                  
-                  
-                </div> <!-- end of modal-content -->
-
-              </div> <!-- end of modal -->
-
-            </div> <!-- end of product1 -->
-
-            <div class="grid-item">
-              <div class="product-card">
-                <img src="img/refridgerator.png" alt="Solar Refridgerator">
-                <h4 class="productTitle">Solar Refridgerators</h4>
-                <!-- <button class="openButton1" id="openModal2">Read more</button> -->
-                <button id="openModal2" class="openButton1">Read more</button>
-               </div> <!-- end of card12-->
-
-               <!-- <button id="openModal" class="">Open Modal</button> -->
-
-              <div id="myModal2" class="modal">
-                <div class="modal-content" style="width: 600px; border-radius: 8px;">
-                  <!-- <span class="close" id="closeModal">&times;</span> -->
-                  <!-- <span class="close" id="closeModal">Close</span> -->
-                    <span class="CloseBtn2" id="close2">Close</span>
-
-                  <ul>
-                    <li>Our solar refrigerators are the cleanest in the world</li>
-                    <li> our non chemical battery keeps contents cold for 36 hours without solar or grid power.</li>
-                    <li>Low carbon footprint, inexpensive and reliable medical services and avoiding food wastage.</li>
-                    <li> Solar power - no emissions, no energy cost and CO2 Free refrigerant.</li>
-                      <!-- <span class="CloseBtn" id="close1">Close</span> -->
-                  </ul>
-                  
-                  
-                </div> <!-- end of modal-content -->
-
-              </div> <!-- end of modal -->
-
-              
-            </div> <!-- end of product2 -->
+        </div><!-- End Item 3 -->
 
 
+        <div class="item">
 
-            <div class="grid-item">
-              <div class="product-card">
-                <img src="img/cleanwater.png" alt="Hydro clean water generator">
-                <h4 class="productTitle">Water Generator</h4>
-                <!-- <button class="openButton1" id="openModal3">Read more</button> -->
-                <button id="openModal3" class="openButton1">Read more</button>
-               </div> <!-- end of card3-->
+          <div class="grid-item">
+            <div class="product-card">
+              <img src="img/greenhydro.png" alt="Hydro green">
+              <h4 class="productTitle">Industrial Hydro Water Convertor</h4>
+              <!-- <button class="openButton1" id="openModal4">Read more</button> -->
+              <button id="openModal4" class="openButton1">Read more</button>
+             </div> <!-- end of card4-->
 
-               <div id="myModal3" class="modal">
-                <div class="modal-content" style="width: 600px; border-radius: 8px;">
-                  <!-- <span class="close" id="closeModal">&times;</span> -->
-                  <!-- <span class="close" id="closeModal">Close</span> -->
-                    <span class="CloseBtn3" id="close13">Close</span>
+             <div id="myModal4" class="modal">
+              <div class="modal-content" style="width: 600px; border-radius: 8px;">
+                <!-- <span class="close" id="closeModal">&times;</span> -->
+                <!-- <span class="close" id="closeModal">Close</span> -->
+                  <span class="CloseBtn4" id="close14">Close</span>
 
-                  <ul>
-                    <li>More affordable than deep cycle batteries.</li>
-                    <li>Long term non chemical clean energy storage with a 30+ year shelf life</li>
-                    <li>Transportable and 74% efficiency factor</li>
-                    <li>This product has the ability to generate between 500-400,000 
-                      litres of clean water from the air every day. </li>
-                      <!-- <span class="CloseBtn" id="close1">Close</span> -->
-                  </ul>
-                  
-                  
-                </div> <!-- end of modal-content -->
+                <ul>
+                  <li>This is a large scale project at municipal/city level where.</li>
+                  <li>We create large industrial amounts of green hydrogen 
+                    from the wastewater processes which utilise vortex processes to clean the water.</li>
+                  <li>Transportable and 74% efficiency factor</li>
+                  <li>This product has the ability to generate between 500-400,000 
+                    litres of clean water from the air every day. </li>
+                    <!-- <span class="CloseBtn" id="close1">Close</span> -->
+                </ul>
+                
+                
+              </div> <!-- end of modal-content -->
 
-              </div> <!-- end of modal -->
-              
-            </div> <!-- end of product3 -->
+            </div> <!-- end of modal -->
 
-          </div> <!-- end of flex-container -->
+          </div> <!-- end of product4 -->
 
-            <div class="flex-container">
-
-              <div class="grid-item">
-                <div class="product-card">
-                  <img src="img/greenhydro.png" alt="Hydro green">
-                  <h4 class="productTitle">Industrial Hydro Water Convertor</h4>
-                  <!-- <button class="openButton1" id="openModal4">Read more</button> -->
-                  <button id="openModal4" class="openButton1">Read more</button>
-                 </div> <!-- end of card4-->
-
-                 <div id="myModal4" class="modal">
-                  <div class="modal-content" style="width: 600px; border-radius: 8px;">
-                    <!-- <span class="close" id="closeModal">&times;</span> -->
-                    <!-- <span class="close" id="closeModal">Close</span> -->
-                      <span class="CloseBtn4" id="close14">Close</span>
-  
-                    <ul>
-                      <li>This is a large scale project at municipal/city level where.</li>
-                      <li>We create large industrial amounts of green hydrogen 
-                        from the wastewater processes which utilise vortex processes to clean the water.</li>
-                      <li>Transportable and 74% efficiency factor</li>
-                      <li>This product has the ability to generate between 500-400,000 
-                        litres of clean water from the air every day. </li>
-                        <!-- <span class="CloseBtn" id="close1">Close</span> -->
-                    </ul>
-                    
-                    
-                  </div> <!-- end of modal-content -->
-  
-                </div> <!-- end of modal -->
-
-              </div> <!-- end of product4 -->
-
-              <div class="grid-item">
-
-                <div class="product-card">
-                  <img src="img/prefab-house.png" style="width: 250px; height: 230px;" alt="Solar Aircon">
-                  <h4 class="productTitle">Neo Smart house Pre Fab </h4>
-                  <!-- <button class="openButton1" id="openModal5">Read more</button> -->
-                  <button id="openModal5" class="openButton1">Read more</button>
-                 </div> <!-- end of card5-->
+        </div> <!-- End Item 4 -->
 
 
-                 <div id="myModal5" class="modal">
-                  <div class="modal-content" style="width: 600px; border-radius: 8px;">
-                    <!-- <span class="close" id="closeModal">&times;</span> -->
-                    <!-- <span class="close" id="closeModal">Close</span> -->
-                      <span class="CloseBtn5" id="close15">Close</span>
-  
-                   <img src="img/smart-house.png" alt="">
-                    
-                    
-                  </div> <!-- end of modal-content -->
-  
-                </div> <!-- end of modal -->
+        <div class="item">
 
-              </div> <!-- end of product5 -->
+          <div class="grid-item">
+
+            <div class="product-card">
+              <img src="img/prefab-house.png" style="width: 250px; height: 230px;" alt="Solar Aircon">
+              <h4 class="productTitle">Neo Smart house Pre Fab </h4>
+              <!-- <button class="openButton1" id="openModal5">Read more</button> -->
+              <button id="openModal5" class="openButton1">Read more</button>
+             </div> <!-- end of card5-->
 
 
-            <div class="grid-item">
+             <div id="myModal5" class="modal">
+              <div class="modal-content" style="width: 600px; border-radius: 8px;">
+                <!-- <span class="close" id="closeModal">&times;</span> -->
+                <!-- <span class="close" id="closeModal">Close</span> -->
+                  <span class="CloseBtn5" id="close15">Close</span>
 
-              <div class="product-card">
-                <img src="img/hydropetrol.png" alt="hydro petrol convertor">
-                <h4 class="productTitle">Petol to Hydro Convertor</h4>
-                <!-- <button class="openButton1" id="openModal6">Read more</button> -->
-                <button id="openModal6" class="openButton1">Read more</button>
-               </div> <!-- end of card6-->
-               
-               <div id="myModal6" class="modal">
-                <div class="modal-content" style="width: 600px; border-radius: 8px;">
-                  <!-- <span class="close" id="closeModal">&times;</span> -->
-                  <!-- <span class="close" id="closeModal">Close</span> -->
-                    <span class="CloseBtn6" id="close16">Close</span>
+               <img src="img/smart-house.png" alt="">
+                
+                
+              </div> <!-- end of modal-content -->
 
-                  <ul>
-                    <li>This converter addresses the very high cost of acquiring a hydrogen 
-                      car and when coupled with the fact that there are no refuelling stations</li>
+            </div> <!-- end of modal -->
 
-                    <li>our customised hydrogen converter can transform almost any petrol powered
-                       vehicle to a hydrogen powered vehicle at a fraction of the cost</li>
+          </div> <!-- end of product5 -->
 
-                    <li>Our tech includes an easy-to-use hydrogen generator where our training programmes 
-                      will make hydrogen affordable and accessible to all @60% cost savings</li>
+        </div> <!-- End Item 5 -->
 
-                    <li>This product has the ability to generate between 500-400,000 
-                      litres of clean water from the air every day. </li>
-                      <!-- <span class="CloseBtn" id="close1">Close</span> -->
-                  </ul>
-                  
-                  
-                </div> <!-- end of modal-content -->
+        <div class="item">
 
-              </div> <!-- end of modal -->
+          <div class="grid-item">
 
-            </div> <!-- end of product6 -->
+            <div class="product-card">
+              <img src="img/hydropetrol.png" alt="hydro petrol convertor">
+              <h4 class="productTitle">Petol to Hydro Convertor</h4>
+              <!-- <button class="openButton1" id="openModal6">Read more</button> -->
+              <button id="openModal6" class="openButton1">Read more</button>
+             </div> <!-- end of card6-->
+             
+             <div id="myModal6" class="modal">
+              <div class="modal-content" style="width: 600px; border-radius: 8px;">
+                <!-- <span class="close" id="closeModal">&times;</span> -->
+                <!-- <span class="close" id="closeModal">Close</span> -->
+                  <span class="CloseBtn6" id="close16">Close</span>
+
+                <ul>
+                  <li>This converter addresses the very high cost of acquiring a hydrogen 
+                    car and when coupled with the fact that there are no refuelling stations</li>
+
+                  <li>our customised hydrogen converter can transform almost any petrol powered
+                     vehicle to a hydrogen powered vehicle at a fraction of the cost</li>
+
+                  <li>Our tech includes an easy-to-use hydrogen generator where our training programmes 
+                    will make hydrogen affordable and accessible to all @60% cost savings</li>
+
+                  <li>This product has the ability to generate between 500-400,000 
+                    litres of clean water from the air every day. </li>
+                    <!-- <span class="CloseBtn" id="close1">Close</span> -->
+                </ul>
+                
+                
+              </div> <!-- end of modal-content -->
+
+            </div> <!-- end of modal -->
+
+          </div> <!-- end of product6 -->
+
+        </div><!-- End Item 6 -->
+
+      </div> <!-- End grid-containerProducts -->
+
+      <!-- grid projects section -->
 
 
-            </div> <!-- end of flex container-->
+    <div class="grid-item1" id="projectSectionGrid">
 
-        </div> <!-- end of productWrapper -->      
-        </section>
-      </main>
+       <!-- Projects section -->
 
-      <!-- Projects section -->
+       <div class="projectsWrapper" id="projectSection">
 
-      <div class="projectsWrapper" id="projectSection">
+        <h3 class="dark-blue" style="color: white;"><strong> Sustainable nature based Projects.</strong></h3>
 
-       
-
-        <div class="projectsHeaderContainer">
-
-          <h3 class="projectHeading" style="color: rgb(217, 210, 210);">
-            Sustainable nature based Projects.
-            <!-- <medium class="text-body-secondary">With faded secondary text</medium> -->
-          </h3>
-
-          <p class="lead" style="color: rgb(217, 210, 210);">
-            3 separate yet integrated projects for Africa's Growing Revolution.
-          </p>
-
-        </div> <!-- end of projectsHeaderContainer -->
+        <p class="center" style="color: white;">3 separate yet integrated projects for Africa's Growing Revolution.</p>
 
         <div class="projectsFlexContainer">
           <div class="projectContainer">
@@ -556,9 +573,11 @@
 
       </div> <!-- end of projects wrapper-->
 
-      <!-- contact form section -->
+    </div><!-- End projectSectionGrid -->
 
-      
+    <div class="grid-item1" id="contactSectionGrid">
+
+      <!-- contact form section -->
 
       <section class="formSection" id="contactSection">
 
@@ -584,7 +603,7 @@
             ------------------------------------------------------------>
           
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790 563" fill="none">
-                <g id="Image">
+                <g id="Image" class="contactImage">
                     <g id="g14">
                         <g id="g16">
                             <g id="g22">
@@ -923,112 +942,73 @@
             </form>
             
           </div>
-	
-        
+  
         </div> <!-- end of contactformContainer -->
       </section> <!-- end of formSection -->
 
+    </div> <!-- End contactSectionGrid -->
+
+
+    <div class="grid-item1" id="footerSectionGrid">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="footer">
+	<div class="container">		
+		<div class="row text-center">						
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">Projets</a></li>
+						<li><a href="#">Team</a></li>
+					</ul>
+				</div>						
+				<div class="footer_copyright">
+					<p>Join us on the green revolution journey.</p>
+				</div>	
+				<div class="footer_profile">
+				
+            <div class="inputWrapper">
+
+              <input type="text" placeholder="Enter your John@gmail.com" class="newsLatterInput"> 
+              <button class="joinBtn">Join</button>
+
+            </div> <!-- end of inputWrapper -->
+					
+				
+				</div>
+
+        <div class="footer_profile">
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+					</ul>
+				</div>
+
+        <div class="footer_copyright">
+					<p>© 2021 4IAFRICA. All Rights Reserved.</p>
+				</div>	
+        
+			</div><!--- END COL -->							
+		</div><!--- END ROW -->					
+	</div><!--- END CONTAINER -->
+</div>
       
-      <footer>
-        <div class="footerContainer">
-          <div class="footerAbout">
-           <h1 class="footerTitles">4IAFRICA</h1>
-           <!-- <h4  class="footerCta"> | INNOVATE | IMPLEMENT | IMPACT</h4> -->
-           <p class="footerCopyAbout">4iAfrica has a long established track record as an Innovation 
-            driven solutions provider.</p>
-           <ul>
-            <li class="sloganAbout">INSIGHT</li>
-            <li class="sloganAbout">IMPLEMENT</li>
-            <li class="sloganAbout">IMPACT</li>
-           </ul>
+    </div> <!-- End footerSectionGrid -->
 
-          </div> <!-- end of footerAbout -->
+  
 
-          <div class="footerContacts">
-            <h1 class="footerTitles">Contact us</h1>
-
-            <div class="iconContactsContainer">
-              <span class="contactIcon">
-                <img src="img/location-dot-solid.svg" alt="" class="contactIcon">
-              </span> <!-- end of contactIcon -->
-              
-              <span class="contatcText">Eswatini | South Africa | Africa</span>
-            
-            </div> <!-- end of iconContactsContainer -->
-
-            <div class="iconContactsContainer">
-              <span class="contactIcon">
-                <img src="img/email-envelope-solid.svg" alt="" class="contactIcon">
-              </span> <!-- end of contactIcon -->
-              
-              <span class="contatcText">4iAfricamail@gmail.com</span>
-            
-            </div> <!-- end of iconContactsContainer -->
+    
 
 
-            <div class="iconContactsContainer">
-              <span class="contactIcon">
-                <img src="img/mobile-screen-button-solid.svg" alt="" class="contactIcon">
-              </span> <!-- end of contactIcon -->
-              
-              <span class="contatcText">+268 7973 5028</span>
-            
-            </div> <!-- end of iconContactsContainer -->
-
-          
-            
-
-          </div> <!-- end of contacts-->
-
-          <div class="footerMenu">
-            <h1 class="footerTitles">Important Links</h1>
-            <ul>
-              <a href="#" class="footerMenuItem">Home</a>
-              <a href="#" class="footerMenuItem">About</a>
-              <a href="#" class="footerMenuItem">Products</a>
-              <a href="#" class="footerMenuItem">Projects</a>
-              <a href="#" class="footerMenuItem">Team</a>
-            </ul>
-          </div> <!-- end of social media -->
-         
-          <div class="footerNewslatter">
-            <h1 class="footerTitles">News Letter</h1>
-            <p  class="footerCta">Sign up to Receive News
-              and Information</p>
-
-              <div class="inputWrapper">
-
-                <input type="text" placeholder="Enter your John@gmail.com" class="newsLatterInput"> 
-                <button class="joinBtn">Join</button>
-
-              </div> <!-- end of inputWrapper -->
-
-              <p class="joinUsTitle">Join us on the Journey</p>
-              <div class="socialMedia">
-
-                <div class="icon">
-                  <!-- <i class="fa fa-facebook-f"></i> -->
-                  <img src="img/facebook-square.svg" alt="Facebook logo" class="socialIcon">
-                </div>
-
-                <div class="icon">
-                  <!-- <i class="fa fa-twitter"></i> -->
-                  <img src="img/twitter-square.svg" alt="Twitter logo" class="socialIcon">
-                </div>
-
-                <div class="icon">
-                  <!-- <i class="fa fa-linkedin"></i> -->
-                  <img src="img/linkedin.svg" alt="Linkedin logo" class="socialIcon">
-                </div>
+</div> <!-- End grid-container1 -->
 
 
-
-              </div> <!-- end of socialMedia -->
-     
-           </div> <!-- end of footerAbout -->
-
-        </div> <!-- end of footerContainer -->
-    </footer>
+<!-- <main></main> -->
 
 </body>
 
