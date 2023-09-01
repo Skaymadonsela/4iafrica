@@ -1,0 +1,119 @@
+.navBar{
+    background-color: #0e0e0e;
+    padding: 20px;
+    text-align: center;
+    /* background-image: linear-gradient(60deg, hsl(116, 71%, 34%), hsl(24, 82%, 46%)); */
+}
+
+/* Mobile */
+
+.mobile-container {
+  max-width: 500px;
+  margin: auto;
+  background-color: #555;
+  height: 80px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  z-index: 5;
+}
+
+.topnav #myLinks {
+  display: block;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  cursor: pointer;
+}
+
+.topnav a.icon {
+  background: rgb(32, 136, 44);
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  /* background-color: #04AA6D; */
+  color: white;
+  
+}
+
+
+/* Desktop */
+
+/* PAGE HEADER */
+header {
+    padding: 3% 5% 3%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    background-color: hsl(0, 0%, 7%);
+    background-image: linear-gradient(60deg, hsl(116, 71%, 34%), hsl(24, 82%, 46%));
+    border-bottom: 5px solid hsl(40, 76%, 52%);
+    height: 60px;
+  
+  }
+  
+  .header-logo {
+    margin-left: 0;
+  }
+  
+  .header-menu ul {
+    display: flex;
+  }
+  
+  
+  .menuItem{
+    /* margin-right: 40px; */
+    color: hsl(0, 0%, 100%);
+    /* font-family: "Raleway", sans-serif; */
+    list-style: none;
+    /* cursor: pointer; */
+    text-decoration: none;
+  }
+  
+  
+  .header-menu li {
+    margin-right: 40px;
+    /* color: hsl(0, 0%, 100%); */
+    font-family: "Raleway", sans-serif;
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  /* UNDERLINE HOVER EFFECTS for HEADER NAV MENU */
+  /* .header-menu li:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    background: hsl(135, 74%, 31%);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .header-menu li:hover:after {
+    width: 100%; 
+    left: 0;
+  } */
+  

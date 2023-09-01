@@ -1,0 +1,276 @@
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    /* Your tablet-specific CSS rules here */
+    .desktopApp{
+        display: none;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+    }
+
+    .outerLayer{
+        display: grid;
+        grid-template-columns: 720px; /* columns */
+        height: 100%;
+        width: 100%;
+        grid-template-rows: repeat(8, 60px, 600px, 600px, 600px, 3000px, 600px, 600px, 400px );
+        gap: 20px; /* Gap between grid items */
+        padding: 20px;
+        padding-left: 25px;
+        background-color: gray;
+        grid-template-areas: 
+        "navBar"
+        "intro"
+        "about"
+        "video"
+        "products"
+        "projects"
+        "Form"
+        "footer"
+    }
+
+    .mobile-container{
+        max-width: 700px;
+        margin: auto;
+        background-color: #555;
+        height: 80px;
+        color: white;
+        border-radius: 10px;
+    }
+
+    .containerCube{
+        height: 20%;
+        display: flex;
+        padding-top: 190px;
+        padding-left: 20px;
+        padding-bottom: 120px;
+        align-items: center;
+        justify-content: center;
+        /* background: #364C64; */
+        /* height: 200px; */
+        /* background: #1772d4; */
+        /* width: 400px; */
+    
+    }
+
+    .h1{
+        margin-left: 20px;
+    }
+
+    .introCopy{
+        width: fit-content;
+        font-size: 14px;
+    }
+
+    .started {
+        padding-top: 1%;
+        width: 250px;
+        margin-left: 200px;
+      }
+
+    .aboutSection{
+        padding: 6% 22%;
+        display: flex;
+        background-color: hsl(218, 28%, 13%);
+        border-bottom: 2px solid #4d4b4b;
+        border-top: 2px solid #4d4b4b;
+        
+    }
+
+    .productDiv{
+        margin-left: 70px;
+    }
+
+    .projectDiv{
+        margin-left: 70px;
+    }
+
+    .contactForm{
+        position: relative;
+        width: 140%;
+        top: 30%;
+        left: -110px;
+      }
+
+      .newsLatterInput{
+        width: 250px;
+        height: 40px;
+        padding-left: 20px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        margin-left: 25px;
+      }
+  }
+
+  /* Medium Tablets (8-inch to 10-inch screens) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Your medium tablet-specific CSS rules here */
+
+    .desktopApp{
+        display: none;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: gray;
+    }
+
+    .outerLayer{
+        display: grid;
+        grid-template-columns: 1024; /* columns */
+        height: 100%;
+        width: 100%;
+        grid-template-rows: repeat(8, 60px, 600px, 600px, 600px, 3000px, 600px, 600px, 400px );
+        gap: 20px; /* Gap between grid items */
+        padding: 20px;
+        padding-left: 20px;
+        background-color: gray;
+        grid-template-areas: 
+        "navBar"
+        "intro"
+        "about"
+        "video"
+        "products"
+        "projects"
+        "Form"
+        "footer"
+    }
+
+    .mobile-container{
+        width: 950px;
+        display: block;
+    }
+
+    .navBar{
+        width: 950px;
+    }
+
+    .intro{
+        width: 950px;
+    }
+
+    .containerCube{
+        height: 20%;
+        display: flex;
+        padding-top: 190px;
+        padding-left: 20px;
+        padding-bottom: 120px;
+        align-items: center;
+        justify-content: center;
+        /* background: #364C64; */
+        /* height: 200px; */
+        /* background: #1772d4; */
+        /* width: 400px; */
+    
+    }
+
+    .h1{
+        margin-left: 20px;
+    }
+
+    .introCopy{
+        width: fit-content;
+        font-size: 14px;
+    }
+
+    .started {
+        padding-top: 1%;
+        width: 250px;
+        margin-left: 320px;
+      }
+
+     .about{
+        width: 950px;
+     }
+
+    .aboutSection{
+        padding: 6% 22%;
+        width: 920px;
+        display: flex;
+        background-color: hsl(218, 28%, 13%);
+        border-bottom: 2px solid #4d4b4b;
+        border-top: 2px solid #4d4b4b;
+        
+    }
+
+    .aboutWrapper{
+        margin-left: 55px;
+    }
+
+    .video{
+        width: 950px;
+    }
+
+    .productLead{
+        position: relative;
+        left: 220px;
+    }
+
+    .productLeadCopy{
+        position: relative;
+        top: 40px;
+        right: 190px;
+    }
+
+    .products{
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        grid-gap: 10px; /* Gap between grid items */
+        width: 950px;
+        height: 1700px;
+
+    }
+
+    /* .productDiv{
+             
+    } */
+
+    .projectDiv{
+        margin-left: 190px;
+    }
+
+    .projects{
+        width: 950px;
+        
+    }
+    .Form{
+        width: 950px;
+    }
+
+    .contactForm{
+        position: relative;
+        width: 140%;
+        top: 30%;
+        left: -120px;
+      }
+
+      .footerContainer{
+        width: 950px;
+      }
+
+      .formHeader{
+        margin-left: 10px;
+      }
+
+      .newsLatterInput{
+        width: 250px;
+        height: 40px;
+        padding-left: 20px;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        margin-left: 25px;
+      }
+
+
+  }
+
+

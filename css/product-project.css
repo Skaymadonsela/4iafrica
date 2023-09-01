@@ -1,0 +1,139 @@
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr;
+    /* flex-direction: column; */
+    background-color: rgb(4, 4, 4);
+    height: 3000px;
+    padding: 20px;
+    padding-top: 60px;
+    gap: 20px;
+    padding-left: 110px;
+    text-align: center;
+    
+}
+
+.productDiv{
+    width: 370px;
+    height: 420px;
+    /* border:5px solid #e0e4e0; */
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgb(87, 87, 89);
+    
+}
+
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(4, 4, 4);
+    height: 1800px;
+    padding: 20px;
+    padding-top: 60px;
+    gap: 20px;
+    padding-left: 110px;
+    text-align: center;
+}
+
+
+
+.projectDiv{
+    width: 370px;
+    height: 420px;
+    /* border:5px solid #e0e4e0; */
+    border-radius: 8px;
+    margin-top: 20px;
+    background-color: rgb(98, 99, 103);
+    
+}
+
+/* Styles for the modal */
+.modal {
+  /* width: 300px;
+  height: 420px; */
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100%;
+  border:5px solid #0a0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  /* width: 280px; */
+  height: 320px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 340px;
+  transform: translate(-50%, -50%);
+}
+
+/* Close button style */
+.close {
+  float: right;
+  cursor: pointer;
+}   
+  /* <!-- Modal end --> */
+
+.productTitle, .projectTitle{
+  color: white;
+  margin-top: 20px;
+}
+
+.openButton1{
+  width: 7.5rem;
+  height: auto;
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(60deg, hsl(116, 71%, 34%), hsl(24, 82%, 46%));
+  box-shadow: 2px 5px 10px hsla(257, 40%, 24%, .6);
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+
+.openButton1Projects{
+  width: auto;
+  height: auto;
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(60deg, hsl(116, 71%, 34%), hsl(24, 82%, 46%));
+  box-shadow: 2px 5px 10px hsla(257, 40%, 24%, .6);
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.productLead{
+  text-align: center;
+  margin-right: 50px;
+}
+
+.productLeadCopy{
+  text-align: center;
+  margin-right: 50px;
+}
+
+.projectLead{
+ /* position: relative;
+ right: 10px */
+ text-align: center;
+ margin-right: 50px;
+}
+
+.projectLeadCopy{
+  text-align: center;
+  margin-right: 50px;
+}

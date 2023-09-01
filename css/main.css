@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+/* Grid container */
+.outerLayer {
+    display: grid;
+    grid-template-columns: 576px; /* columns */
+    height: 100%;
+    width: 600px;
+    grid-template-rows: repeat(8, 60px, 600px, 600px, 600px, 3000px, 600px, 600px, 400px );
+    gap: 20px; /* Gap between grid items */
+    padding: 20px;
+    padding-left: 12px;
+    background-color: gray;
+    grid-template-areas: 
+    "navBar"
+    "intro"
+    "about"
+    "video"
+    "products"
+    "projects"
+    "Form"
+    "footer"
+
+}
+
+/* Grid items */
+
+
+
+
+
+
+

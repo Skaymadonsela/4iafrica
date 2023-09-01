@@ -1,0 +1,113 @@
+.footerContainer{
+    background-color: #505153;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer practice */
+
+.container{
+    height: 300px;
+  }
+  
+  .footer {
+    height: 400px;
+    background:#505153;
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
+  .footer_menu {
+  margin-bottom: 20px;
+  }
+  .footer_menu ul {
+  list-style: none;
+  text-align: center;
+  }
+  .footer_menu ul li{display: inline-block;}
+  .footer_menu ul li a {
+  color:#fff;
+  padding: 0 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  }
+  .footer_menu ul li a:hover{color:#554c86;}
+
+  /* input */
+
+.newsLatterInput{
+    width: 250px;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-left: 15px;
+  }
+  
+  .joinBtn{
+    width: 60px;
+    height: 40px;
+    position: relative;
+    left: -20px;
+    border: none;
+    border-radius: 0; /* Resetting border-radius to 0 on all sides */
+    border-top-right-radius: 30px; /* Adjust the radius value as per your preference */
+    border-bottom-right-radius: 30px; /* Adjust the radius value as per your preference */
+    background-color: #000;
+    color: white;
+  }
+  
+  .joinBtn:hover{
+    background-color: #4b8800;
+  }
+  
+  
+  /*START FOOTER SOCIAL DESIGN*/
+  .footer_profile{margin-bottom:40px;}
+  .footer_profile ul{
+  list-style: outside none none;
+  margin: 0;
+  padding: 0
+  }
+  .footer_profile ul li{
+  display: inline-block;
+  }
+  @media only screen and (max-width:480px) { 
+  .footer_profile ul li{margin:2px;}
+  }
+  .footer_profile ul li a img{width:60px;}
+  
+  .footer_profile ul li a {
+  /* background: #554c86; */
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 50%;
+  line-height: 40px;
+  box-sizing: border-box;
+  text-decoration: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #fff;
+  }
+  .footer_copyright {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .ozioTag{
+    text-decoration: none;
+    font-style: none;
+    color: #121213;
+    cursor: pointer;
+  }
+
+  /* .ozioTag :hover{
+    color: green;
+  } */

@@ -2,6 +2,17 @@ alert(
     "Test"
 )
 
+// MobileMenu
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 // Modal 1
 
 const openButton1 = document.querySelector("#openModal1");
